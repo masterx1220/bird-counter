@@ -1,0 +1,110 @@
+body {
+    background-image: url("sky.jpg");
+    background-size: cover;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
+#increment-btn {
+    background: #5390d9;
+}
+
+#increment-btn:hover{
+    color: #5390d9;
+    background: whitesmoke;
+    border: 2px solid #48bfe3
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+#save-btn:hover{
+    color: darkgreen;
+    background: white;
+    border: 2px solid darkgreen
+}
+
+@keyframes slideInLeft {
+    50% {
+        transform: translateX(55vw);
+    }
+    50.01% {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes slideInRight {
+    50% {
+        transform: translateX(50vw);
+    }
+    50.01% {
+        transform: translateX(-55vw);
+    }
+}
+
+@keyframes y-axis {
+  50% {
+    transform: translateY(100vh);
+  }
+  50.01% {
+      transform: translateY(-100vh)
+  }
+  /* 100%{
+      transform: translateY(90px)
+  } */
+}
+
+.wrapper {
+  animation: y-axis 1s infinite ease-in-out;
+}
+
+
+.bird-Img{
+    animation: slideInLeft 3s linear infinite;
+    margin-bottom: 80px;
+}
+
+.pixel-bird{
+    padding: px;
+    animation: slideInRight 5s linear infinite reverse;
+    margin-bottom: 50px;    
+}
+
+.hawk{
+  animation: y-axis 5s infinite linear;
+}
+
+.background-Img{
+    background-image: url("sky.jpg");
+    background-size: cover;
+    max-width: 80%;
+   
+    margin: auto;
+}
